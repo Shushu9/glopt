@@ -1,0 +1,104 @@
+@media (max-width: 1200px) {
+    .promo{
+        .header {
+            .menu {
+                margin-bottom: 0;
+            }
+            &__wrapper {
+                flex-direction: column;
+            }
+            &__contacts {
+                margin-bottom: 10px;
+            }
+            &__btn {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {     
+    .promo{
+        .header {
+            width: 90%;
+            &__wrapper {
+                flex-direction: row;
+            }
+            &__btn {
+                margin-bottom: 0;
+            }
+        }
+
+        .menu {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .8);
+            transition: 0.6s all;
+            &_active {
+                left: 0;
+            } 
+            &__item {
+                // width: 100%;
+                text-align: center;
+                padding-right: 0;
+                border: none;
+                margin: 10px 0;
+                padding: 5px 0;
+            }
+            &__link{
+                font-size: 20px;
+                display: block;
+            }
+                
+        }
+
+
+        .hamburger {
+            display: block;
+            position: absolute;
+            right: 20px;
+            // top: 5%;
+            // transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+            span {
+                display: block;
+                height: 2px;
+                width: 100%;
+                background-color: #fff;
+                margin-bottom: 2px;
+                transition: 0.5s all;
+            }
+            &_active {
+                span{
+                    margin-bottom: -2px;
+                    &:nth-child(1) {
+                        transform: translateY(3px) rotate(-45deg);
+                    }
+                    &:nth-child(2){
+                        display: none;
+                    }
+                    &:nth-child(3){
+                        transform: translateY(3px) rotate(45deg);
+                    }
+                }   
+            }
+        }
+    }
+}
+
+// @media (max-width: 767px) {
+//     max-width: 560px;
+// }
+
+// @media (max-width: 575px) {
+
+//     padding: 0 10px 0 10px;
+// }

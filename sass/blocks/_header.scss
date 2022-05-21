@@ -14,7 +14,7 @@
         list-style-type: none;
         padding-left: 0;
         margin-top: 0;
-        margin-left: 14px;
+        margin-right: 16px;
         &__link {
             color: #FFFFFF;
             font-size: 15px;
@@ -40,9 +40,13 @@
         }
 
     }
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
     &__contacts {
         margin-bottom: 20px;
-        margin-left: 38px;
+        margin-right: 17px;
     }
     &__desc {
         font-size: 14px;
@@ -65,4 +69,9 @@
         margin-bottom: 15px;
     }
     
+// hamburger
+    .hamburger {
+        display: none;
+    }
+
 }
