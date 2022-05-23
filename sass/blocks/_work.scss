@@ -1,0 +1,51 @@
+.divider {
+    display: block;
+    margin: 21px auto 0 auto;
+    width: 150px;
+    border-bottom: 1px solid $main-color;
+}
+
+.subtitle {
+    margin: 13px auto 0 auto;
+    text-align: center;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 300;
+    max-width: 890px;
+}
+
+.work {
+    margin: 49px 0 20px 0;
+    &__items {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 360px;
+    }
+
+    &__title {
+        margin-top: 21px;
+        text-align: center;
+        color: $main-color;
+        font-weight: 700;
+        font-size: 16px;
+
+    }
+
+    &__desc {
+        text-align: justify;
+        margin-top: 7px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 300;
+        // div {
+        //     text-align: center;
+        //     width: 360px;
+        // }
+    }
+
+    
+
+}

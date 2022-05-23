@@ -1,5 +1,5 @@
 .promo {
-    padding-bottom: 80px;
+    padding-bottom: 82px;
     position: relative;
     background: url('../img/mainbg.jpg') center center/cover no-repeat;
     &__subheader {
@@ -28,7 +28,7 @@
     }
 
     &__divider {
-        margin-top: 37px;
+        margin-top: 40px;
         width: 100%;
         display: flex;
         align-items: center;
@@ -75,6 +75,6 @@
         font-size: 15px;
         font-weight: 700;
         display: block;
-        margin: 37px auto 0 auto; 
+        margin: 35px auto 0 auto; 
     }
 }
