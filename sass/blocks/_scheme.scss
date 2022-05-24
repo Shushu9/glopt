@@ -1,0 +1,36 @@
+.scheme {
+    padding: 48px 0 26px 0;
+    background-color: #f3f3f3;
+    &__items {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        width: 261px;
+        margin: 0 12px 23px 12px;
+    }
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 57px;
+    }
+    &__title {
+        padding-top: 3px;
+        color: $main-color;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    &__desc {
+        margin-top: 2px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+    
+}

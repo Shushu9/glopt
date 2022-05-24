@@ -34,6 +34,12 @@
             margin-bottom: 30px;
         }
     }
+    .price {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }
 
 @media (max-width: 991px) {     
@@ -146,6 +152,12 @@
             width: 530px;
         }
     }
+
+    .consult {
+        &__form {
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -190,6 +202,12 @@
         }
         &__desc {
             font-size: 16px;
+        }
+    }
+
+    .consult {
+        &__title {
+            font-size: 22px;
         }
     }
 
