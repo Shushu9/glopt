@@ -1,0 +1,63 @@
+.question {
+    padding: 37px 0 80px 0;
+    background: url('../img/plane.jpg') center center/cover no-repeat;
+    &__form {
+        max-width: 895px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__header {
+        padding: 20px 0 18px 0;
+        margin-bottom: 0;
+        font-size: 19px;
+        line-height: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: #25333c;
+        font-weight: 700;
+        span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+
+    &__wrap {
+        background-color: rgba(255, 255, 255, .5);
+        padding-bottom: 25px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 35px 0 35px ;
+        input {
+            width: 237px;
+            height: 43px;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 300;
+            border-radius: 43px;
+            border: 1px solid #aaaba9;
+            margin: 0 3px 6px 3px;
+            padding-left: 28px;
+        }
+    }
+    textarea {
+        margin: 0 40px 15px 40px;
+        padding: 12px 0px 0 26px;
+        width: 788px;
+        height: 60px;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+        border-radius: 8px;
+        border: 1px solid #aaaba9;
+        resize: none;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+    }
+}

@@ -15,3 +15,26 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+$(document).ready(function(){
+    $('.feed__carousel').slick({
+        speed: 1200,
+        infinite: true,
+        slidesToShow: 3,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/Left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/Right.png"></button>',
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    dots: true
+                }
+            }
+        ]    
+    });     
+});

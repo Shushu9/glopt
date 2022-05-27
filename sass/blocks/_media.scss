@@ -40,6 +40,16 @@
             justify-content: space-around;
         }
     }
+    .feed {
+        .slick-prev {
+            left: 38%;
+        }
+        
+        .slick-next {
+            right: 38%;
+        }
+    }
+
 }
 
 @media (max-width: 991px) {     
@@ -158,6 +168,12 @@
             flex-wrap: wrap;
         }
     }
+
+    .question {
+        textarea {
+            width: 86%;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -209,6 +225,17 @@
         &__title {
             font-size: 22px;
         }
+    }
+
+    .question {
+        &__items {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        textarea {
+            width: 80%;
+        }
+        
     }
 
     
@@ -286,8 +313,20 @@
                 // margin: 0 auto; 
                 max-width: 310px;
             }
-                
-            
+        }
+    }
+
+    .question {
+        &__items {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        &__wrap {
+            padding: 0 40px 25px 40px;
+        }
+        textarea {
+            display: block;
+            margin: 0 auto 15px auto;
         }
     }
 
