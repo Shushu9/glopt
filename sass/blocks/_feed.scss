@@ -1,10 +1,12 @@
 .feed {
     padding: 48px 0 40px 0;
+    transition: all 400ms ease;
 
     &__carousel {
         padding-top: 31px;
         position: relative;
         margin: 0 auto;
+        
         img {
             display: block;
             margin: 45px auto 0 auto;
@@ -61,9 +63,16 @@
         background:rgba(255,255,255, 0);
         z-index: 1;
         outline: none;
+        &:hover {
+            cursor: pointer;
+        }
         img {
             width: 15px;
             height: 47px;
+            transition: all 0.3s;
+            &:hover {
+                transform: scale(1.15);
+            }
         }
     }
     

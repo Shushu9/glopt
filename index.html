@@ -418,12 +418,22 @@
         </div>
     </section>
     <section class="map">
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.608622268623!2d37.62723!3d55.7479289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54af8f4b2bb81%3A0x45d8b81f41916c35!2z0KHQsNC00L7QstC90LjRh9C10YHQutCw0Y8g0YPQuy4sIDUsINCc0L7RgdC60LLQsCwgMTE1MDM1!5e0!3m2!1sru!2sru!4v1653558440253!5m2!1sru!2sru" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-
-        <!-- <a href="https://yandex.ru/maps/?um=constructor%3A8aa4ff46b7898ba050ecb4c69ba12e440980ce3b0f872372641f4f28b9ff0b09&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A8aa4ff46b7898ba050ecb4c69ba12e440980ce3b0f872372641f4f28b9ff0b09&amp;width=100%&amp;height=450&amp;lang=ru_RU" alt="" style="border: 0;" />
-        </a> -->
 
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8aa4ff46b7898ba050ecb4c69ba12e440980ce3b0f872372641f4f28b9ff0b09&amp;source=constructor" width="100%" height="495" frameborder="0"></iframe>
+
+
+    <div class="map__items">        
+        <div class="map__mark">
+            <img src="icons/marker.png" alt="marker">
+        </div>
+        <div class="map__info">
+            <address class="map__addr"><span>г. Москва</span><br> ул. Садовническая, дом 5, офис 4-6 700 от м. Новокузнуцкая</address>
+            <a href="tel:+79264230100" class="map__phone">Тел: +7 (926) 423 01 00</a>
+            <a href="mailto:info@glopt.ru" class="map__mail">info@glopt.ru</a>
+        </div>
+
+    </div>
+
     </section>
     <footer class="foot">
         <div class="container">
@@ -449,17 +459,18 @@
                 </div>
                 <div class="foot__item">
                     <div class="foot__text">Создание сайта:</div>
-                    <img src="icons/creator.png" alt="creator">
+                    <a href="#">
+                        <img src="icons/creator.png" alt="creator">
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+
 </body>
 </html>

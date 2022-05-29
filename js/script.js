@@ -19,11 +19,13 @@ window.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function(){
     $('.feed__carousel').slick({
         speed: 1200,
-        infinite: true,
+        // infinite: true,
         slidesToShow: 3,
         centerMode: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
+        // fade: true,
+        // cssEase: 'linear',
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/Left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/Right.png"></button>',
         responsive: [
