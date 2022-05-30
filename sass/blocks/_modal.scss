@@ -1,0 +1,76 @@
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .56);
+    z-index: 1;
+    display: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    min-height: 250px;
+    background: #F2F2F2;
+    padding: 38px 40px 40px 40px;
+
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 40px;
+        line-height: 20px;
+        color: $main-color;
+        cursor: pointer;
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+
+    .feed__form {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 17px 10px 0 10px ;
+        input {
+            width: 237px;
+            height: 43px;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 300;
+            border-radius: 43px;
+            border: 1px solid #aaaba9;
+            margin: 0 3px 6px 3px;
+            padding-left: 28px;
+        }
+    }
+
+    .btn_submit {
+        width: 100%;
+    }
+
+
+}
+
+#consultation {
+    display: none;
+}
+

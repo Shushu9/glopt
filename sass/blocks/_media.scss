@@ -379,3 +379,11 @@
     }
 
 }
+
+@media (max-width: 360px) {
+    .modal {
+        &__close {
+            right: 35px;
+        }
+    }
+}

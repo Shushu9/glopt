@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -52,7 +52,7 @@
                         <div class="header__desc">Есть вопросы?</div>
                         <a href="tel:+79264230100" class="header__phone">+7 (926) 423 01 00</a>
                     </div>
-                    <button data-modal="callme" class="btn header__btn">перезвоните мне</button>
+                    <button data-modal="consultation" class="btn header__btn">перезвоните мне</button>
                 </div>
                 <div class="hamburger">
                     <span></span>
@@ -95,7 +95,7 @@
                         <div class="promo__item-desc">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
                     </div>
                 </div>
-                <button class="btn promo__btn">Получить расчет</button>
+                <button class="btn promo__btn" data-modal="consultation">Получить расчет</button>
             </div>
         </div>
     </section>
@@ -235,7 +235,7 @@
                     <div class="price__time">Доставка 35-50 дней</div>
                     <div class="price__cost">от 0,3$ за 1 кг</div>
                     <div class="price__desc">Морские перевозки грузов из Китая в Россию за 35 дней  с прохождением таможни</div>
-                    <button class="price__btn btn">Подробнее</button>
+                    <button class="price__btn btn" data-modal="consultation">Подробнее</button>
                 </div>
                 <div class="price__item">
                     <div class="price__title">Ж/Д доставка</div>
@@ -245,7 +245,7 @@
                     <div class="price__time">Доставка 15-28 дней</div>
                     <div class="price__cost">от 1$ за 1 кг</div>
                     <div class="price__desc">ЖД перевозки грузов из Китая в Россию от 2 недель с прохождением таможни</div>
-                    <button class="price__btn btn">Подробнее</button>
+                    <button class="price__btn btn" data-modal="consultation">Подробнее</button>
                 </div>
                 <div class="price__item">
                     <div class="price__title">Автодоставка</div>
@@ -255,7 +255,7 @@
                     <div class="price__time">Доставка 12-20 дня</div>
                     <div class="price__cost">от 1$ за 1 кг</div>
                     <div class="price__desc">Автоперевозки грузов из Китая в Россию от 2 недель с прохождением таможни</div>
-                    <button class="price__btn btn">Подробнее</button>
+                    <button class="price__btn btn" data-modal="consultation">Подробнее</button>
                 </div>
                 <div class="price__item">
                     <div class="price__title">Авиа доставка</div>
@@ -265,7 +265,7 @@
                     <div class="price__time">Доставка 1-12 дней</div>
                     <div class="price__cost">от 6$ за 1 кг</div>
                     <div class="price__desc">Авиаперевозки грузов из Китая в Россию до 2 недель с прохождением таможни</div>
-                    <button class="price__btn btn">Подробнее</button>
+                    <button class="price__btn btn" data-modal="consultation">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -448,7 +448,7 @@
                         <div class="foot__desc">Есть вопросы?</div>
                         <a href="tel:+79264230100" class="foot__phone">+7 (926) 423 01 00</a>
                     </div>
-                    <button data-modal="callme" class="btn foot__btn">перезвоните мне</button>
+                    <button data-modal="consultation" class="btn foot__btn">перезвоните мне</button>
                 </div>
             </div>
             <div class="foot__divider"></div>
@@ -466,6 +466,28 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed__form feed-form_mt25" action="#">
+                <input name="name" placeholder="Ваше имя" type="text">
+                <input name="phone" placeholder="Ваш телефон">
+                <input name="email" placeholder="Ваш E-mail" type="email">
+                <button class="btn btn_submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#up" class="pageup">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-circle-up" class="svg-inline--fa fa-chevron-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="#ec644b" d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm231-113.9L103.5 277.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L256 226.9l101.6 101.6c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L273 142.1c-9.4-9.4-24.6-9.4-34 0z"></path>
+        </svg>
+    </a>
+
+
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
