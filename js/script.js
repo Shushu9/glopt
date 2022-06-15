@@ -29,8 +29,8 @@ $(document).ready(function(){
         // autoplaySpeed: 2000,
         // fade: true,
         // cssEase: 'linear',
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/Left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/Right.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
         responsive: [
             {
                 breakpoint: 991,
